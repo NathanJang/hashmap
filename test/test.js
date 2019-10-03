@@ -332,6 +332,7 @@ describe('hashmap', function() {
 			}
 			// Perform ES6 iteration
 			for (var pair of hashmap) {
+				expect(pair.key).to.equal('key' + pair.value);
 				calls[pair.value]++;
 			}
 			expect(calls).to.deep.equal(new Array(numberOfTries).fill(1));
