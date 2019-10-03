@@ -182,7 +182,7 @@
 			var i = 0;
 			return {
 				next:function() {
-					if (i === entries.length) { return { done: true }; };
+					if (i === entries.length) { return { done: true }; }
 					var currentEntry = entries[i++];
 					return {
 						value: { key: currentEntry[0], value: currentEntry[1] },
